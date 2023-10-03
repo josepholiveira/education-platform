@@ -1,0 +1,51 @@
+---
+title: Criando Animações Interativas com Framer Motion e ReactJS
+---
+
+Faaaala dev!
+
+Neste artigo, exploraremos um universo de possibilidades ao introduzir você nos fundamentos do **Framer Motion** no **ReactJS**. O objetivo aqui é entendermos alguns fundamentos do Framer Motion e alguns exemplos práticos para que você possa se familiarizar com essa biblioteca e começar a criar animações em suas aplicações. 🚀
+
+Por aqui, vamos mergulhar nos aspectos essenciais do **Framer Motion** e explorar suas funcionalidades fundamentais. Não hesite em utilizar os vários links para a **documentação oficial do Framer Motion**, que serão uma excelente referência para aprofundar ainda mais seus conhecimentos, e ir além do que vemos aqui 💜
+
+### 🎉 Ao final desse artigo você terá aprendido sobre:
+
+* Conhecimento das propriedades básicas como **initial**, **whileInView**, **whileHover** e **whileDrag** para criar animações.
+* Entendimento do conceito de **variants** e sua aplicação para agrupar propriedades de animação de forma organizada.
+* Criar animações interativas para elevar a qualidade das suas interfaces.
+
+E por fim, como **bônus** vamos entender a técnica utilizada nas páginas da Rocketseat para animar a entrada de elementos quando visíveis na tela utilizando o **whileInView**. 🎉
+
+Página do evento exclusivo de IA para Devs, realizado em agosto de 2023 pela Rocketseat.
+
+![](/Untitled.gif)
+
+## **O que é o Framer Motion?**
+
+O **Framer Motion** é uma biblioteca poderosa que possibilita a criação de animações de forma simples em aplicações desenvolvidas com **ReactJS**. Ao contrário do que pode parecer à primeira vista, você não precisa ser um expert em animação para começar a usá-lo e criar experiências incríveis, e é isso que faz ela ser uma das favoritas para esse propósito.
+
+## **Funcionalidades Básicas do Framer Motion**
+
+Para embarcar na jornada das animações com Framer Motion, é crucial começarmos com o pé direito, e é essencial entender as funcionalidades básicas que essa biblioteca oferece. Vamos explorar algumas dessas funcionalidades, utilizando exemplos práticos para facilitar seu entendimento.
+
+Agora, vamos entender o conceito fundamental por trás do componente chamado **`motion`**. O Framer Motion nos permite adicionar animações a elementos HTML de uma maneira intuitiva, através do que eles chamam de [Motion Component](https://www.framer.com/motion/component/). Ao usar o **`motion`**, você pode renderizar qualquer elemento HTML, como **`div`**, **`p`**, **`img`**, **`button`** e muitos outros, para torná-los animados.
+
+Por exemplo, em vez de usar apenas uma **`<div>`**, você pode transformar essa **`<div>`** em uma **`<motion.div>`**. Isso não apenas habilita a criação de animações, mas também oferece uma série de propriedades e comportamentos que podemos ajustar para criar as animações.
+
+Portanto, sempre que quiser aplicar uma animação a um elemento HTML, você pode simplesmente utilizar o **`motion.elementoDesejado`**, onde "elementoDesejado" pode ser substituído por qualquer tag HTML, como **`div`**, **`img`**, **`p`**, **`button`** e mais.
+
+Com isso, você está pronto para começar a explorar as possibilidades do Framer Motion, adicionando animações aos elementos HTML. Lembre-se de que o Framer Motion nos oferece um leque de propriedades e recursos para criar animações em sua aplicação ReactJS.
+
+## **Propriedade initial e animate: Criando animações básicas**
+
+Quando criamos animações com o Framer Motion, podemos definir estados iniciais e também definir como ele deve se comportar durante sua animação.
+
+Imagine que você deseja que um elemento comece invisível e gradualmente apareça, em uma duração de meio segundo. Você poderia fazer isso apenas usando as propriedades `initial` e `animate`.
+
+A propriedade **initial** permite que você defina o estado inicial de um elemento antes de qualquer animação ser aplicada. Já a **animate** define o comportamento da animação. Veja, e brinque um pouco com o exemplo abaixo:
+
+<CodePlayground />
+
+O poder dessas duas propriedades juntas é enorme, e inclusive permite que você possa animar elementos de forma reativas à um estado do React, como demonstrado na documentação oficial.
+
+<Button children="Clique aqui!" />

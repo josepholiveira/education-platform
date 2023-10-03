@@ -1,6 +1,8 @@
-import { H1 } from '@/components/H1'
+import dynamic from 'next/dynamic'
+import { Button } from '@/components/Button'
+import CodePlayground from '@/components/CodePlayground'
 
 export const MDXComponents = {
-  h1: H1,
-  H1
+  Button,
+  CodePlayground
 }

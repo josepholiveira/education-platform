@@ -24,6 +24,7 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "content/posts",
+        format: 'mdx',
         fields: [
           {
             type: "string",
@@ -37,12 +38,22 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+
+            templates: [
+              {
+                name: "Button",
+                label: "Button",
+                fields: [
+                  {
+                    name: "children",
+                    label: "Button Text",
+                    type: "string",
+                  },
+                ],
+              },
+            ]
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-
-        },
       },
     ],
   },
