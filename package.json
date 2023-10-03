@@ -3,16 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
+    "start": "tinacms build && next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tinacms/cli": "^1.5.30",
     "next": "latest",
     "next-mdx-remote": "^4.4.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "tinacms": "^1.5.21"
   },
   "devDependencies": {
     "@types/node": "latest",
