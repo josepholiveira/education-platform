@@ -6,7 +6,7 @@ import fs from 'fs/promises';
 import matter from 'gray-matter';
 
 
-export  const loadBlogPost = React.cache(async (slug: string) => {
+const loadBlogPost = React.cache(async (slug: string) => {
   const rawContent = await readFile(
     `/content/posts/${slug}.mdx`
   );
